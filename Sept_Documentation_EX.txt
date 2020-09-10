@@ -1,0 +1,24 @@
+Author: Tommy Gonzales
+Purpose: Documentation example for Senior Project, and process for setting up a container utilizing
+Systemd.
+Sources: https://medium.com/@huljar/setting-up-containers-with-systemd-nspawn-b719cff0fb8d
+
+Documentation
+
+-installed the packages required for these container set ups as noted in the source.
+-just incase I need this
+Key ID (6D33866EDD8FFA41C0143AEDDCC9EFBF77E11517) in hex I am believe
+-I set up the "helloworld" OS tree as shown in the article and received
+"Base system installed successfully" in the shell
+-used chown and chmod command to force root to have permissions to the directory
+-I used cd /var/lib/machines/helloworld to access the directory then used the systemd-nspawn -b
+command to launch the container
+-I may not have set up a user/pw combo for the container, so I launched another container and used
+ps -ef and then kill <container id> to kill the process.
+-I did the echo requests and started up the network process for container helloworld.
+-I need a refresher on document creation using the BASH and making scripts to automate container
+launches and networks. I will start this 9/10
+
+Notes to me:
+- access container directory by /var/lib/machines/helloworld
+- cd into it
